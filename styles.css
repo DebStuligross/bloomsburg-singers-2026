@@ -151,6 +151,34 @@ section h2 {
     border-bottom: 3px solid var(--red);
 }
 
+/* ── Checklist ── */
+.checklist-section {
+    background: #fff8f0;
+    border-left: 4px solid var(--red);
+}
+
+.checklist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.checklist li::before {
+    content: "☐";
+    color: var(--red);
+    flex-shrink: 0;
+    line-height: 1.45;
+}
+
 /* ── Upcoming Activities ── */
 .activities-table {
     width: 100%;
