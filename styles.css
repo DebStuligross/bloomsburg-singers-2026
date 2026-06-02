@@ -95,6 +95,24 @@ header h1 {
 
 .detail-main { font-size: 1.15rem; font-weight: 600; }
 
+.concert-details .call-time {
+    align-self: center;
+    margin: 0.6rem 0 0.35rem;
+    padding: 0.45rem 1.3rem;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.concert-details .call-time strong {
+    font-weight: 900;
+}
+
 /* ── Nav ── */
 .section-nav {
     background: var(--navy-dark);
@@ -149,6 +167,30 @@ section h2 {
     margin-bottom: 1.25rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid var(--red);
+}
+
+/* ── Invite Banner ── */
+.invite-banner {
+    background: var(--navy);
+    color: var(--white);
+    border-left: 4px solid var(--red);
+    text-align: center;
+}
+
+.invite-banner p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.invite-banner .invite-lead {
+    display: block;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #ffd966;
+    font-size: 0.82rem;
+    margin-bottom: 0.35rem;
 }
 
 /* ── Checklist ── */
@@ -331,6 +373,71 @@ section h2 {
     letter-spacing: 0.04em;
     vertical-align: middle;
 }
+
+/* Joe's focus note callout */
+.focus-note {
+    margin-top: 0.4rem;
+    background: #fff8f0;
+    border-left: 3px solid var(--red);
+    border-radius: 0 5px 5px 0;
+    padding: 0.4rem 0.65rem;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.focus-label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.66rem;
+    color: var(--red);
+    margin-bottom: 0.15rem;
+}
+
+.focus-note.praise {
+    background: #eef7ee;
+    border-left-color: #2e7d32;
+}
+
+.focus-note.praise .focus-label { color: #2e7d32; }
+
+/* ── Other Opportunities ── */
+.opportunities-section { background: #f7f9fc; }
+
+.opp-intro {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.85rem;
+}
+
+.opp-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.opp-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding-left: 0.9rem;
+    border-left: 3px solid var(--border);
+}
+
+.opp-date {
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--navy);
+}
+
+.opp-name { font-weight: 600; font-size: 0.95rem; }
+
+.opp-detail { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
 
 /* ── Logistics ── */
 .logistics-list {
