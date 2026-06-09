@@ -187,10 +187,10 @@ section h2 {
     display: block;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     color: #ffd966;
-    font-size: 0.82rem;
-    margin-bottom: 0.35rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* ── WVIA / Media Banner ── */
