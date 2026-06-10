@@ -360,6 +360,42 @@ section h2 {
 
 .piece-links a:hover { background: var(--red-dark); color: var(--white); }
 
+/* Concert program section headers */
+.repertoire-list li.section-header {
+    counter-increment: none;
+    display: block;
+    border-bottom: 2px solid var(--navy);
+    padding: 1.2rem 0 0.35rem;
+    margin-top: 0.5rem;
+}
+
+.repertoire-list li.section-header:first-child {
+    padding-top: 0.2rem;
+    margin-top: 0;
+}
+
+.repertoire-list li.section-header::before {
+    content: none;
+}
+
+.section-header-text {
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--navy);
+}
+
+/* Non-numbered program item (e.g. instrumental prelude) */
+.repertoire-list li.no-count {
+    counter-increment: none;
+}
+
+.repertoire-list li.no-count::before {
+    content: "\266A";
+    color: var(--muted);
+}
+
 /* Chester verse notes */
 .verse-notes {
     margin-top: 0.3rem;
