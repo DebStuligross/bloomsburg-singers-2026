@@ -27,6 +27,10 @@ body {
 a { color: var(--red); }
 a:hover { color: var(--red-dark); }
 
+.music-sym {
+    font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', sans-serif;
+}
+
 /* ── Header ── */
 header {
     background: var(--navy);
@@ -393,6 +397,7 @@ section h2 {
 
 .repertoire-list li.no-count::before {
     content: "\266A";
+    font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', sans-serif;
     color: var(--muted);
 }
 
@@ -619,6 +624,80 @@ details[open] > summary {
 .email-body li { margin-bottom: 0.3rem; }
 .email-body hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
 .email-body em { color: var(--muted); font-size: 0.85rem; }
+
+/* ── Site Traffic ── */
+.stats-section { background: var(--sky); border: 1px solid var(--border); }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.stat-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.9rem 0.5rem;
+    text-align: center;
+}
+
+.stat-card.stat-highlight {
+    background: var(--navy);
+    border-color: var(--navy);
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.stat-card.stat-highlight .stat-value { color: var(--white); }
+
+.stat-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+}
+
+.stat-card.stat-highlight .stat-label { color: rgba(255, 255, 255, 0.72); }
+
+.stats-note {
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+/* ── Feedback button ── */
+.feedback-btn {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1rem;
+    background: var(--navy);
+    color: var(--white) !important;
+    text-decoration: none !important;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 0.6rem 1rem;
+    border-radius: 24px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.28);
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    z-index: 200;
+    min-height: 44px;
+    transition: background 0.15s;
+}
+
+.feedback-btn:hover { background: var(--red); color: var(--white) !important; }
 
 /* ── Footer ── */
 footer {
